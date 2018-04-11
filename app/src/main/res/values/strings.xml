@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">De Jure Fitness</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+
+    <string name="dialog_title">LOG OUT</string>
+    <string name="dialog_text">Are you sure you want to log out?</string>
+</resources>

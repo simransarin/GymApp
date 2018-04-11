@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    android:orientation="vertical"
+    tools:context="com.innprojects.gymapp.activities.TargetWeightSelectorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#00ffffff"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:text="Set your goal weight"
+            android:textColor="@color/whitesmoke"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/target_weightview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:paddingBottom="30dp"
+                android:text="1"
+                android:textColor="@color/whitesmoke"
+                android:textSize="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:background="@color/whitesmoke">
+
+                <Button
+                    android:id="@+id/target_cancelweight"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/whitesmoke"
+                    android:gravity="start|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="CANCEL"
+                    android:textColor="#6b6b6b"
+                    android:textAlignment="viewStart" />
+
+                <Button
+                    android:id="@+id/target_confirmweight"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/whitesmoke"
+                    android:gravity="end|center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="CONFIRM"
+                    android:textColor="#6b6b6b"
+                    android:textAlignment="viewEnd" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/graybg"/>
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="start"-->
+            <!--android:paddingBottom="30dp"-->
+            <!--android:text="years"-->
+            <!--android:textColor="@color/whitesmoke"-->
+            <!--android:textSize="25dp" />-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom"
+        android:background="@color/whitesmoke"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <NumberPicker
+            android:id="@+id/target_weight_picker"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:solidColor="@color/whitesmoke" />
+
+    </LinearLayout>
+
+</LinearLayout>
